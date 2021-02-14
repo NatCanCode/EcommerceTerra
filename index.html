@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce></e-commerce></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Homepage -->
+    
+    <section id="home">
+        <header class="flex column">
+
+            <!-- Menu -->
+
+            <nav class="flex">
+                <h2>TERRA</h2>
+                <a href="#E-SHOP">E-SHOP</a>
+                <a href="#LOOKBOOKS">LOOKBOOKS</a>
+                <a href="#LA MARQUE">LA MARQUE</a>
+                <a href="#BOUTIQUES">BOUTIQUES</a>
+                
+                <div class="menuicons flex">
+                    <div class="icon flex">
+                        <img src="images/loupe.png" alt="icone-loupe">
+                        
+                        <div class="search search--open">
+                            <form class="search__form" method="get" action="/search">
+                              <input type="text" name="q" value="" placeholder="Rechercher un produit" aria-label="Rechercher un produit" class="search-query">
+                              <input type="hidden" name="type" value="product">
+                            </form>    
+                    </div>
+
+                    <div class="icon flex">
+                        <img src="images/compte.png" alt="icone-compte">
+                    </div>
+                    <div class="icon flex">
+                        <img src="images/panier.png" alt="icone-panier">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Titre -->
+            <div class="titre flex column">
+                <h1>NOUVELLE COLLECTION</h1>
+            </div>
+        </header>
+   </section>
+
+   <section id="decouvrir">
+
+        <div class="container1 flex ">
+
+            <div class="box box1">
+                <button class="bouton boutoncream">
+                    <p>DÉCOUVRIR</p>
+                </button>
+            </div>
+
+            <div class="box box2">
+                <button class="bouton boutoncream">
+                    <p>DÉCOUVRIR</p>
+                </button>
+            </div>
+
+            <div class="box box3">
+                <button class="bouton boutoncream">
+                    <p>DÉCOUVRIR</p>
+                </button>
+            </div>
+        </div>
+        <div class="container2 flex">
+
+            <div class="box box4">
+                <button class="bouton boutoncream">
+                    <p>DÉCOUVRIR</p>
+                </button>
+            </div>
+
+            <div class="box box5">
+                <button class="bouton boutoncream">
+                    <p>DÉCOUVRIR</p>
+                </button>
+            </div>
+        </div>
+
+   </section>
+
+   <!-- Footer -->
+
+    <footer class="site-footer-wrapper flex column" role="contentinfo" data-section-id="footer" data-section-type="footer">
+        
+        <div class="newsletter flex column">
+        <div>
+            <div class="flex column">
+                <div class="flex">
+                 <p>INSCRIVEZ-VOUS À LA NEWSLETTER</p>
+                </div>
+    
+                <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+                    <input type="hidden" name="contact[accepts_marketing]" value="true">
+                
+                <div class="input-group newsletter-form">
+                    <input type="email" id="mail" class="input-group-field" aria-label="votre-courriel@exemple.com" autocorrect="off" autocapitalize="off" name="contact[email]" placeholder="Votre adresse email">
+                      
+                     <!-- ok  -->
+                    <span>
+                        <input type="submit" class="bouton boutonblack" name="subscribe" id="subscribe" value="OK">
+                    </span>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- </div> -->
+    
+    <nav class="footer flex">
+        <a href="#FAQ">FAQ</a>
+        <a href="#SERVICE CLIENT">SERVICE CLIENT</a>
+        <a href="#MENTIONS LÉGALES">MENTIONS LÉGALES</a>
+        <a href="#CGV">CGV</a>
+        <a href="https://www.instagram.com/sessun/" target="_blank" rel="noopener">INSTAGRAM</a>
+        <a href="©NOVA 2021">©NOVA 2021</a>  
+    </nav>
+
+    </footer>
+
+
+    <!-- SCRIPT  -->
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
