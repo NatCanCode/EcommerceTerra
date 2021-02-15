@@ -74,7 +74,7 @@ h1{
 h2{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;
-    font-size: clamp(30px, 13vw, 60px);
+    font-size: clamp(30px, 20vw, 60px);
     /* line-height: 55px, 100%; */
     /* text-align: left; */
     /* font-size: clamp(34px, 12vw, 48px); */
@@ -171,6 +171,31 @@ input{
 .boutoncream{
     background: #FFFBF5;
     color: black;
+}
+
+
+#menu li ul {
+    position:absolute;
+    }
+
+ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+}
+
+#menu li {
+    float:left;
+    margin:auto;
+    padding:0;
+    background-color:#FFFBF5;
 }
 
 /* Découvrir */
