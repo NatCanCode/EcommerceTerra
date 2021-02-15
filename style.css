@@ -53,6 +53,7 @@ body{
     font-size: 100%;
     /* font: inherit; */
     vertical-align: baseline;
+    background: #FFFBF5;
 }
 
 /* section{
@@ -147,7 +148,7 @@ ul {
     padding:0;
     background-color:#FFFBF5;
 } */
-
+/* 
 #menu li a {
     display:block;
     width:100px;
@@ -166,7 +167,7 @@ ul {
 
 #menu li ul {
     position:absolute;
-    }
+    } */
 
 .menuicons{
     gap: 40px;
@@ -194,7 +195,7 @@ form{
     /* line-height: 27px, 100%; */
     justify-content: center;
     align-items: center;
-    border-radius: 1px;
+    /* border-radius: 1px; */
 }
 
 input{
@@ -202,7 +203,7 @@ input{
     color: #D8998F;
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
-    border-radius: 1px;
+    /* border-radius: 1px; */
 }
 
 .boutonblack{
