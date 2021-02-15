@@ -153,9 +153,19 @@ form{
     border-radius: 1px;
 }
 
+input{
+    background: #FFFBF5;
+    color: #D8998F;
+    font-size: clamp(12px, 10vw, 14px);
+    padding: 5px 5px;
+    border-radius: 1px;
+}
+
 .boutonblack{
     background: black;
     color: #FFFBF5;
+    /* font-size: clamp(12px, 10vw, 13px); */
+    padding: 2px 5px;
 }
 
 .boutoncream{
@@ -275,6 +285,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
     }
     /* .carre p {
         display: none;
