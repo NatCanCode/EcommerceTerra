@@ -10,7 +10,7 @@ html{
 }
 
 /* Bordure pour vérifer blocs */
-/* section{
+section{
     border: 3px solid yellow;
 }
 
@@ -20,7 +20,7 @@ footer{
 
 div, nav, header, article, form{
     border: 2px solid green;
-} */
+}
 
 img{
     /* garder ratio d'une image  */
@@ -60,18 +60,6 @@ body{
     margin-bottom: 70px;
 } */
 
-h1{
-    font-family: 'Libre Baskerville', serif;
-    font-style: Bold;
-    text-align: center;
-    font-size: clamp(35px, 13vw, 80px);
-    /* line-height: 229px, 100%; */
-    /* text-align: left;
-    vertical-align: top; */
-    color: #FFFBF5;
-    margin-top: 307px;
-}
-
 h2{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;
@@ -82,18 +70,7 @@ h2{
     vertical-align: top;
 }
 
-/* Homepage */
-#home{
-    /* responsive */
-    min-height: 950px; 
-}
-
-#home .titre{
-    background: url("images/homepage.png") no-repeat center / cover;
-    min-height: 750px;
-    align-self: stretch;
-}
-
+/* Header */
 .burger{
     display: none;
 }
@@ -117,9 +94,9 @@ nav a{
     vertical-align: top; */
 }
 
-a {
+a{
     transition: color .5s;
-  }
+}
   
 a:hover {
     color: #d8998f;
@@ -218,13 +195,125 @@ input{
     color: black;
 }
 
+/* Produits */
+#produits{
+    justify-content: space-evenly;
+    min-height: 1200px;
+    align-self: stretch;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
 
-/* Section */
+.titre{
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: clamp(18px, 10vw, 25px);
+}
 
+#produits .home{
+    justify-content: flex-end;
+    min-width: 120px;
+    min-height: 43px;
+    border: none;
+    background: black;
+    color: #FFFBF5;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
 
+.container1{
+    justify-content: space-evenly;
+    min-height: 640px;
+    min-width: 100%;
+    padding-top: 0;
+}
+
+.container2{
+    justify-content: space-evenly;
+    min-height: 640px;
+    min-width: 100%;
+    padding-top: 10px;
+}
+
+#produits .box{
+    min-width: 420px;
+    min-height: 525px;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+#produits button{
+    border: none;
+    min-width: 252px;
+    min-height: 43px;
+    background: #FFFBF5;
+    font-weight: bold;
+    transition: background-color .5s;
+}
+  
+#produits button:hover {
+    background-color: #d8998f;
+    color: #FFFBF5;
+}
+
+#produit span{
+    font-weight: bold;
+}
+
+.box1{
+    background: url(images/creamtshirt.png) no-repeat center / cover;
+}
+
+.box2{
+    background: url(images/pinktshirt.png) no-repeat center / cover;
+}
+
+.box3{
+    background: url(images/orangetshirt.png) no-repeat center / cover;
+}
+
+.box4{
+    background: url(images/lightorangetshirt.png) no-repeat center / cover;
+}
+
+.box5{
+    background: url(images/creamblouse.png) no-repeat center / cover;
+}
+
+.box6{
+    background: url(images/whitetshirt.png) no-repeat center / cover;
+}
+
+.detail{
+    justify-content: space-between;
+    font-size: clamp(12px, 10vw, 18px);
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.nom{
+    justify-content: flex-start;
+    /* margin-right: 369px; */
+}
+
+.prix{
+    justify-content: flex-end;
+}
+
+span{
+    font-weight: bold;
+}
+
+.article{
+    min-width: 420px;
+}
+
+ 
 /* Footer */
 footer{
     justify-content: space-between;
+    align-self: stretch;
 }
 
 .newsletter{
@@ -252,7 +341,7 @@ footer{
         display: none;
     }
 
-    #home #decouvrir{
+    #home #produits{
         flex-direction: column;
         /* align-items: flex-end; */
         justify-content: center;
@@ -264,7 +353,7 @@ footer{
     }
 
     .container2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
     }
 
@@ -275,12 +364,14 @@ footer{
         align-items: center;
         margin-bottom: 20px;
     }
-    /* .carre p {
-        display: none;
-    } */
-    #home #decouvrir img {
+  
+    #home #produits img {
         display: block;
 
+    }
+
+    .detail{
+        display: none;
     }
 }
 @media (max-width: 670px) {
