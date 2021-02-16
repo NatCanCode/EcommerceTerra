@@ -10,7 +10,7 @@ html{
 }
 
 /* Bordure pour vérifer blocs */
-section{
+/* section{
     border: 3px solid yellow;
 }
 
@@ -20,7 +20,7 @@ footer{
 
 div, nav, header, article, form{
     border: 2px solid green;
-}
+} */
 
 img{
     /* garder ratio d'une image  */
@@ -211,7 +211,7 @@ input{
     font-size: clamp(18px, 10vw, 25px);
 }
 
-#produits .home{
+#produits .filtre{
     justify-content: flex-end;
     min-width: 120px;
     min-height: 43px;
