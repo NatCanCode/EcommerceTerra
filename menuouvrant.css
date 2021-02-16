@@ -159,6 +159,7 @@ input{
     color: #D8998F;
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
+    border-color: black;
     /* border-radius: 1px; */
 }
 
@@ -174,7 +175,7 @@ input{
     color: black;
 }
 
-
+/* 
 #menu li ul {
     position:absolute;
     }
@@ -197,7 +198,7 @@ ul {
     margin:auto;
     padding:0;
     background-color:#FFFBF5;
-}
+} */
 
 /* Découvrir */
 #decouvrir{
@@ -272,6 +273,14 @@ footer{
     justify-content: center;
     align-items: space-evenly ;
     text-align: left;
+}
+
+.newsletter p{
+    font-size: clamp(12px, 10vw, 16px);
+}
+
+.newsletter form{
+    margin-top: 15px;
 }
 
 .footer{

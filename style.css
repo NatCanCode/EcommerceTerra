@@ -10,17 +10,17 @@ html{
 }
 
 /* Bordure pour vérifer blocs */
-section{
+/* section{
     border: 3px solid yellow;
 }
 
 footer{
     border: 3px solid red;
-}
+} */
 
-div, nav, header, article, form{
+/* div, nav, header, article, form{
     border: 2px solid green;
-}
+} */
 
 img{
     /* garder ratio d'une image  */
@@ -80,6 +80,8 @@ h2{
     /* text-align: left; */
     /* font-size: clamp(34px, 12vw, 48px); */
     vertical-align: top;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Homepage */
@@ -100,13 +102,18 @@ h2{
 
 nav{
     /* gap: 5px; */
+    min-width: 1100px;
     flex-direction: row;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-left: 40px;
-    margin-right: 40px;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
     margin-top: 14px;
     margin-bottom: 14px;
+    margin-right: 10px;
+}
+
+nav .footer{
+    min-width: 1400px;
 }
 
 nav a{
@@ -203,6 +210,7 @@ input{
     color: #D8998F;
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
+    border-color: black;
     /* border-radius: 1px; */
 }
 
@@ -283,13 +291,25 @@ footer{
     min-width: 335px;
     min-height: 123px;
     border: 1px solid black;
+    border-left: none;
+    border-right: none;
     justify-content: center;
-    align-items: space-evenly ;
+    align-items: space-evenly;
     text-align: left;
+    align-self: stretch;  
+}
+
+.newsletter p{
+    font-size: clamp(12px, 10vw, 16px);
+}
+
+.newsletter form{
+    margin-top: 15px;
 }
 
 .footer{
     min-height: 94px;
+    flex-direction: row;
 }
 
 /* media queries */
@@ -308,6 +328,13 @@ footer{
         flex-direction: column;
         /* align-items: flex-end; */
         justify-content: center;
+    
+    }
+
+    #home #decouvrir img {
+        display: block;
+        width: min(414px, 100%);
+        height: auto;
     }
 
     .container1{
@@ -327,15 +354,56 @@ footer{
         align-items: center;
         margin-bottom: 20px;
     }
-    /* .carre p {
-        display: none;
-    } */
-    #home #decouvrir img {
-        display: block;
-
-    }
 }
+
 @media (max-width: 670px) {
+    #home nav a{
+        display: table-column;
+        justify-content: space-around;
+        /* align-items: stretch; */
+    }
+
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    } 
+
+    /* .btn2 {
+        @include btn(120px, 100px);
+      
+        .icon {
+          @include icon(8px, 60px);
+      
+          &:before {
+            @include icon-before(8px, 60px, -20px);
+          }
+      
+          &:after {
+            @include icon-after(8px, 60px, 20px);
+          }
+        }
+      
+        &.open {
+          .icon {
+            transition-duration: 0.5s;
+            background: transparent;
+      
+            &:before {
+              transform: rotateZ(45deg) scaleX(1.25) translate(13px, 13px);
+            }
+      
+            &:after {
+              transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      } */
+
+
     .container1{
         flex-direction: column-reverse;
         justify-content: center;
@@ -349,6 +417,74 @@ footer{
     .box{
         min-width: 100%;
     }
+
+    #home nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+    }
+
+    .burger h2{
+        background: #FFFBF5;
+        padding: 10px;
+        /* valeur passe au dessus des autres */
+        z-index: 1;
+    }
+
+    /* header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+    } */
+
+    #home nav{
+        /* position passe par dessus les autres */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #FFFBF5;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        gap: 40px;
+        /* valeur passe au dessus des autres */
+        transform: translateX(100%);
+        transition: .5s;
+    }
+
+    .menu-open{
+        transform: translateX(0);
+    }
+
+    .burger span{
+        width: 40px;
+        height: 5px;
+        background: black;
+        border-radius: 54px;
+        margin: 6px;
+        display: block;
+    }
+   
+    .titre{
+        align-items: center;
+    }
+
+    .menuicons{
+        display: none;
+    }
+
+    form{
+        margin: 0 auto 35px;
+    }
+
+   .footer{
+        /* display: none; */
+        flex-direction: column !important;
     
+    }
 
 }

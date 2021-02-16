@@ -234,6 +234,15 @@ footer{
     justify-content: center;
     align-items: space-evenly ;
     text-align: left;
+    align-self: stretch;
+}
+
+.newsletter p{
+    font-size: clamp(12px, 10vw, 16px);
+}
+
+.newsletter form{
+    margin-top: 15px;
 }
 
 .footer{
