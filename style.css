@@ -45,13 +45,10 @@ body{
     color: black;
     font-style: regular;
     font-size: clamp(12px, 10vw, 18px);
-    /* Line height: 21px;
-    Line height: 100%; */
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    /* font: inherit; */
     vertical-align: baseline;
     background: #FFFBF5;
 }
@@ -65,9 +62,6 @@ h1{
     font-style: Bold;
     text-align: center;
     font-size: clamp(35px, 13vw, 80px);
-    /* line-height: 229px, 100%; */
-    /* text-align: left;
-    vertical-align: top; */
     color: #FFFBF5;
     margin-top: 307px;
 }
@@ -76,9 +70,6 @@ h2{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;
     font-size: clamp(30px, 13vw, 60px);
-    /* line-height: 55px, 100%; */
-    /* text-align: left; */
-    /* font-size: clamp(34px, 12vw, 48px); */
     vertical-align: top;
     margin-left: 20px;
     margin-right: 20px;
@@ -131,50 +122,6 @@ a{
 a:hover {
     color: #d8998f;
 }
-/* 
-#menu li ul {
-    position:absolute;
-    }
-
-ul {
-    padding:0;
-    margin:0;
-    list-style-type:none;
-}
-
-#menu ul {
-    margin:0;
-    padding:0;
-    list-style-type:none;
-    text-align:center;
-}
-
-#menu li {
-    float:left;
-    margin:auto;
-    padding:0;
-    background-color:#FFFBF5;
-} */
-/* 
-#menu li a {
-    display:block;
-    width:100px;
-    color:black;
-    text-decoration:none;
-    padding:5px;
-}
-
-#menu li a:hover {
-    color:#D8998F;
-}
-
-#menu ul li ul {
-    display:none;
-}
-
-#menu li ul {
-    position:absolute;
-    } */
 
 .menuicons{
     gap: 40px;
@@ -187,10 +134,6 @@ ul {
     gap: 20px;
 }
 
-/* .search.search--open .search__form {
-    border-bottom: .1px solid #999;
-} */
-
 form{
     box-sizing: border-box;
 }
@@ -199,10 +142,8 @@ form{
     font-family: 'Libre Baskerville', serif;
     font-style: bold;
     font-size: clamp(12px, 10vw, 18px);
-    /* line-height: 27px, 100%; */
     justify-content: center;
     align-items: center;
-    /* border-radius: 1px; */
 }
 
 input{
@@ -211,7 +152,6 @@ input{
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
     border-color: black;
-    /* border-radius: 1px; */
 }
 
 .boutonblack{
@@ -312,13 +252,6 @@ footer{
     flex-direction: row;
 }
 
-/* media queries */
-/* @media only screen and (max-width: 767px)
-.site-footer-wrapper{
-    min-height: 100vh;
-    display: flex;
-} */
-
 @media (max-width: 900px){
     #home nav a{
         display: none;
@@ -363,46 +296,11 @@ footer{
         /* align-items: stretch; */
     }
 
-
     .burger{
         display: block;
         cursor: pointer;
-    } 
-
-    /* .btn2 {
-        @include btn(120px, 100px);
-      
-        .icon {
-          @include icon(8px, 60px);
-      
-          &:before {
-            @include icon-before(8px, 60px, -20px);
-          }
-      
-          &:after {
-            @include icon-after(8px, 60px, 20px);
-          }
-        }
-      
-        &.open {
-          .icon {
-            transition-duration: 0.5s;
-            background: transparent;
-      
-            &:before {
-              transform: rotateZ(45deg) scaleX(1.25) translate(13px, 13px);
-            }
-      
-            &:after {
-              transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
-            }
-          }
-        }
-        &:hover {
-          cursor: pointer;
-        }
-      } */
-
+        padding: 10px;
+    }
 
     .container1{
         flex-direction: column-reverse;
@@ -418,26 +316,12 @@ footer{
         min-width: 100%;
     }
 
-    #home nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0; 
-    }
-
     .burger h2{
         background: #FFFBF5;
         padding: 10px;
         /* valeur passe au dessus des autres */
         z-index: 1;
     }
-
-    /* header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0; 
-    } */
 
     #home nav{
         /* position passe par dessus les autres */
@@ -449,8 +333,8 @@ footer{
         background: #FFFBF5;
         flex-direction: column;
         justify-content: center !important;
-        align-items: center;
-        gap: 40px;
+        /* align-items: center;
+        gap: 40px; */
         /* valeur passe au dessus des autres */
         transform: translateX(100%);
         transition: .5s;
@@ -482,7 +366,6 @@ footer{
     }
 
    .footer{
-        /* display: none; */
         flex-direction: column !important;
     
     }
