@@ -73,7 +73,7 @@ h2{
 
 nav{
     /* gap: 5px; */
-    /* min-width: 1100px; */
+    min-width: 1100px;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
@@ -90,20 +90,15 @@ nav{
     margin-right: 10px;
 }
 
-/* nav a{
+nav a{
     text-decoration: none;
     color: black;
     row-gap: 45px;
-    align-items: center;
-    vertical-align: top;
-} */
+    /* align-items: center;
+    vertical-align: top; */
+}
 
 a{
-    text-decoration: none;
-    color: black;
-    row-gap: 45px;
-    align-items: center;
-    vertical-align: top;
     transition: color .5s;
 }
   
@@ -130,10 +125,8 @@ form{
     font-family: 'Libre Baskerville', serif;
     font-style: bold;
     font-size: clamp(12px, 10vw, 18px);
-    /* line-height: 27px, 100%; */
     justify-content: center;
     align-items: center;
-    /* border-radius: 1px; */
 }
 
 input{
