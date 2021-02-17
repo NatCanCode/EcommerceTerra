@@ -57,6 +57,19 @@ body{
     margin-bottom: 70px;
 } */
 
+/* -------------------- */
+/* Animation */
+  
+  .hide {
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+/* ------------------- */
+
 h1{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;
