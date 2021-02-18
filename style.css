@@ -119,7 +119,7 @@ nav{
     margin-right: 10px;
 }
 
-nav .footer{
+.footer{
     min-width: 1400px;
 }
 
@@ -180,6 +180,7 @@ input{
 .boutoncream{
     background: #FFFBF5;
     color: black;
+    /* font-weight: lighter; */
 }
 
 /* Découvrir */
