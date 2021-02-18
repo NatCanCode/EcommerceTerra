@@ -53,6 +53,18 @@ body{
     background: #FFFBF5;
 }
 
+p,
+button,
+.bouton,
+h2,
+nav{
+    cursor: pointer;
+}
+
+/* section{
+    margin-bottom: 70px;
+} */
+
 h2{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;

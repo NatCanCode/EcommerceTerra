@@ -53,6 +53,13 @@ body{
     background: #FFFBF5;
 }
 
+h1,
+h2,
+nav,
+button{
+    cursor: pointer;
+}
+
 /* section{
     margin-bottom: 70px;
 } */
@@ -86,6 +93,7 @@ h2{
     vertical-align: top;
     margin-left: 20px;
     margin-right: 20px;
+
 }
 
 /* Homepage */
