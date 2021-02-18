@@ -103,8 +103,14 @@ nav a{
     vertical-align: top; */
 }
 
+.footer A{
+    text-decoration: none;
+    color: black;
+    row-gap: 45px;
+}
+
 a{
-    transition: color .2s;
+    transition: color .5s;
   }
   
 a:hover {
@@ -273,15 +279,14 @@ footer{
 }
 
 @media (max-width: 900px){
-  nav a{
+    nav a{
         display: none;
     }
 }
 
 @media (max-width: 670px) {
     nav a{
-        display: table-column;
-        justify-content: space-around;
+        display: none;
     }
 
     .burger{
