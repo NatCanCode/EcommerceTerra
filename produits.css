@@ -53,10 +53,6 @@ body{
     background: #FFFBF5;
 }
 
-/* section{
-    margin-bottom: 70px;
-} */
-
 h2{
     font-family: 'Libre Baskerville', serif;
     font-style: Bold;
@@ -125,7 +121,7 @@ form{
 
 .bouton{
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-style: normal;
     font-size: clamp(12px, 10vw, 18px);
     justify-content: center;
     align-items: center;
@@ -345,7 +341,6 @@ footer{
         display: table-column;
         justify-content: space-around;
     }
-
 
     .burger{
         display: block;
