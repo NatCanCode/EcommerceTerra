@@ -187,15 +187,15 @@ h4{
 
 .box{
     border: 1px solid grey;
-    width: 80px;
+    width: 70px;
     height: 50px;
-    margin-right: 18px;
+    /* margin-right: 18px; */
 }
 
 .sizeselect{
-    width: 80px;
+    width: 70px;
     height: 50px;
-    margin-right: 18px;
+    /* margin-right: 18px; */
 }
 
 button{
@@ -203,10 +203,10 @@ button{
     color: #FFFFFF;
     border: 0px;
     width: 100px;
-    height : 50px;
+    height : 40px;
     font-size: 18px;
     align-self: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 span,
@@ -216,6 +216,8 @@ h2,
 .ajouter{
     cursor: pointer;
 }
+
+
 
 .details{
     align-items: flex-start;
@@ -259,6 +261,11 @@ h2,
 .detail4{
     justify-content: flex-start;
     align-items: flex-start;
+
+}
+
+p2{
+    font-weight: 600;
 }
 
 
@@ -271,7 +278,7 @@ h2,
 
 .slides{
     width: calc(399px*3);
-    animation: glisse 10s infinite;
+    animation: glisse 10s;
 }
 
 .slide{
@@ -412,5 +419,4 @@ footer{
     
     .footer{
         flex-direction: column !important;
-        
     }

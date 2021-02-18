@@ -211,7 +211,7 @@ input{
     min-width: 252px;
     min-height: 43px;
     background: #FFFBF5;
-    font-weight: bold;
+    font-weight: normal;
     transition: background-color .5s;
 }
   

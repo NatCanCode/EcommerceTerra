@@ -53,6 +53,11 @@ body{
     background: #FFFBF5;
 }
 
+p{
+    font-size: 20px;
+}
+
+
 p,
 button,
 .bouton,
