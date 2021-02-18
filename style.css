@@ -352,7 +352,7 @@ footer{
         gap: 40px; */
         /* valeur passe au dessus des autres */
         transform: translateX(100%);
-        transition: .5s;
+        transition: 2s;
     }
 
     .menu-open{
