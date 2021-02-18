@@ -347,72 +347,70 @@ footer{
 
 
 @media (max-width: 670px) {
-        #select nav a{
-            display: table-column;
-            justify-content: space-around;
-        }
+    #select nav a{
+        display: table-column;
+        justify-content: space-around;
+    }
     
-        .burger{
-            display: block;
-            cursor: pointer;
-            padding: 10px;
-        } 
+    .burger{
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    } 
     
-        #select nav{
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0; 
-        }
+    #select nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+    }
     
-        .burger h2{
-            background: #FFFBF5;
-            padding: 10px;
-            /* valeur passe au dessus des autres */
-            z-index: 1;
-        }
+    .burger h2{
+        background: #FFFBF5;
+        padding: 10px;
+        /* valeur passe au dessus des autres */
+        z-index: 1;
+    }
     
-        #select nav{
-            /* position passe par dessus les autres */
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: #FFFBF5;
-            flex-direction: column;
-            justify-content: center !important;
-            align-items: center;
-            gap: 40px;
-            /* valeur passe au dessus des autres */
-            transform: translateX(100%);
-            transition: 2s;
-        }
+    #select nav{
+        /* position passe par dessus les autres */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #FFFBF5;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        gap: 40px;
+        /* valeur passe au dessus des autres */
+        transform: translateX(100%);
+        transition: 2s;
+    }
     
-        .menu-open{
-            transform: translateX(0);
-        }
+    .menu-open{
+        transform: translateX(0);
+    }
           
-        .burger span{
-            width: 40px;
-            height: 5px;
-            background: black;
-            border-radius: 54px;
-            margin: 6px;
-            display: block;
-        }
+    .burger span{
+        width: 40px;
+        height: 5px;
+        background: black;
+        border-radius: 54px;
+        margin: 6px;
+        display: block;
+    }
     
-        .menuicons{
-            display: none;
-        }
+    .menuicons{
+        display: none;
+    }
     
-        form{
-            margin: 0 auto 35px;
-        }
+    form{
+        margin: 0 auto 35px;
+    }
     
-       .footer{
-            flex-direction: column !important;
+    .footer{
+        flex-direction: column !important;
         
-        }
-    
     }
