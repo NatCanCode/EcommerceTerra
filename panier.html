@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce></e-commerce></title>
+    <title> Mon panier - TERRA </title>
     <link rel="stylesheet" href="panier.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Homepage -->
+  <!--==================================== PAGE PANIER ====================================-->
     
-    <section id="home">
-        <header class="flex column">
+    
 
-            <!-- Menu -->
+        <!-- ============== HEADER ============== -->
+        <header class="flex column">
 
             <nav class="flex">
                 <h2>TERRA</h2>
@@ -30,17 +30,21 @@
                         <img src="images/loupe.png" alt="icone-loupe">
                         
                         <div class="search search--open">
-                            <form class="search__form" method="get" action="/search">
+
+                            <form>
                               <input type="text" name="q" value="" placeholder="Rechercher un produit" aria-label="Rechercher un produit" class="search-query">
-                              <input type="hidden" name="type" value="product">
                             </form>    
-                    </div>
+                        </div>
 
                     <div class="icon flex">
                         <img src="images/compte.png" alt="icone-compte">
                     </div>
-                    <div class="icon flex">
+
+                    <div class="icon1 flex">
                         <img src="images/panier.png" alt="icone-panier">
+                        <div class="ajoutpanier">
+                        <p4>1</p4>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -50,13 +54,63 @@
                 <span></span>
                 <span></span>
             </div>
+        </header>
+    
+
+   <!--============================ PANIER ==============================-->
+
+    <p class="panier">VOTRE PANIER</p>    
+
+    <hr>
+            <div class="container flex">
+                <img src="Images/navytshirtpanier.png" alt="tshirt-alba-panier">
 
 
-    <!-- Section  -->
+                <div class="details flex">
+
+                    <div class="detail1 flex column">
+                    <h4>T-SHIRT ALBA</h4>
+                    <p2>40</p2>
+                    </div>
+
+                    <div class="qte">
+                    <!-- <div class="quantity flex"> -->
+                    <!-- <input type="button" value="-"> -->
+                    <input class="quantity" type="number" value="1" min="0" max="20" placeholder="Qté">
+                    <!-- <input type="button" value="+"> -->
+                    <!-- </div> -->
+                    </div>
 
 
+                    <div class="prix">    
+                    <h4>29€</h4>
+                    </div>
 
-    <!-- Footer -->
+                </div>
+            </div>
+        
+    <hr>
+
+            <div class="container2 flex column">
+
+                    <div class="souscontainer1 flex">
+                    <h1>SOUS - TOTAL</h1>
+                    <h1>29€</h1>
+                    </div>
+
+                    <div class="souscontainer2 flex">
+                    <h3>LIVRAISON ESTIMÉE</h3>
+                    <h3>OFFERTE</h3>
+                    </div>
+            </div>
+
+            <div class="container3 flex">
+                    <p1>Continuer mes achats</p1>
+                    <button>VALIDER</button>
+            </div>
+
+
+    <!--============================ FOOTER ===================-->
 
     <footer class="site-footer-wrapper flex column" role="contentinfo" data-section-id="footer" data-section-type="footer">
         
@@ -71,7 +125,7 @@
                     <input type="hidden" name="contact[accepts_marketing]" value="true">
                 
                 <div class="input-group newsletter-form">
-                    <input type="email" id="mail" class="input-group-field" aria-label="votre-courriel@exemple.com" autocorrect="off" autocapitalize="off" name="contact[email]" placeholder="Votre adresse email">
+                    <input type="email" id="mail" class="input-group-field" aria-label="votre-courriel@exemple.com" name="contact[email]" placeholder="Votre adresse email">
                       
                      <!-- ok  -->
                     <span>
@@ -93,15 +147,10 @@
         <a href="#MENTIONS LÉGALES">MENTIONS LÉGALES</a>
         <a href="#CGV">CGV</a>
         <a href="https://www.instagram.com/sessun/" target="_blank" rel="noopener">INSTAGRAM</a>
-        <a href="©NOVA 2021">©TERRA 2021</a>  
+        <a href="© TERRA 2021">©TERRA 2021</a>  
     </nav>
 
     </footer>
-
-
-    <!-- SCRIPT  -->
-    <script src="app.js"></script>
-
     
 </body>
 </html>
