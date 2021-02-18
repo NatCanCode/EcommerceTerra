@@ -127,7 +127,7 @@ form{
     /* line-height: 27px, 100%; */
     justify-content: center;
     align-items: center;
-    border-radius: 1px;
+    /* border-radius: 1px; */
 }
 
 input{
@@ -137,7 +137,6 @@ input{
     padding: 5px 5px;
     border-radius: 1px;
     border-color: black;
-    
 }
 
 .boutonblack{
