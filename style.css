@@ -89,15 +89,10 @@ h2{
 }
 
 /* Homepage */
-#home{
-    /* responsive */
-    min-height: 950px; 
-}
-
 #home .titre{
     background: url("images/homepage.png") no-repeat center / cover;
-    min-height: 750px;
-    align-self: stretch;
+    min-height: 758px;
+    /* align-self: stretch; */
 }
 
 .burger{
@@ -106,7 +101,7 @@ h2{
 
 nav{
     /* gap: 5px; */
-    min-width: 1100px;
+    width: min(1100px, 95%);
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
@@ -188,11 +183,13 @@ input{
 .container1{
     justify-content: space-evenly;
     min-height: 750px;
+    flex-wrap: wrap;
 }
 
 .container2{
     justify-content: space-evenly;
     min-height: 750px;
+    flex-wrap: wrap;
 }
 #decouvrir .box{
     min-width: 420px;
@@ -283,9 +280,14 @@ footer{
         height: auto;
     }
 
+    /* .menuicons{
+        display: none;
+    } */
+
     .container1{
         flex-direction: column-reverse;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .container2 {
