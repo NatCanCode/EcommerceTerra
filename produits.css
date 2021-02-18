@@ -132,8 +132,8 @@ form{
 }
 
 .bouton{
-    font-family: 'Libre Baskerville', serif;
-    font-style: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: clamp(12px, 10vw, 18px);
     justify-content: center;
     align-items: center;
@@ -145,7 +145,6 @@ input{
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
     border-color: black;
-    /* border-radius: 1px; */
 }
 
 .boutonblack{
@@ -290,7 +289,7 @@ footer{
     border-left: none;
     border-right: none;
     justify-content: center;
-    align-items: space-evenly ;
+    align-items: space-evenly;
     text-align: left;
     align-self: stretch;
 }

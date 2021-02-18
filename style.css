@@ -155,8 +155,8 @@ form{
 }
 
 .bouton{
-    font-family: 'Libre Baskerville', serif;
-    font-style: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: clamp(12px, 10vw, 18px);
     justify-content: center;
     align-items: center;
@@ -316,7 +316,6 @@ footer{
     #home nav a{
         display: table-column;
         justify-content: space-around;
-        /* align-items: stretch; */
     }
 
     .burger{
@@ -356,8 +355,8 @@ footer{
         background: #FFFBF5;
         flex-direction: column;
         justify-content: center !important;
-        /* align-items: center;
-        gap: 40px; */
+        align-items: center;
+        gap: 40px;
         /* valeur passe au dessus des autres */
         transform: translateX(100%);
         transition: 2s;
