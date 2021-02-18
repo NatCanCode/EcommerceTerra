@@ -53,6 +53,14 @@ body{
     background: #FFFBF5;
 }
 
+p,
+button,
+.bouton,
+h2,
+nav{
+    cursor: pointer;
+}
+
 /* section{
     margin-bottom: 70px;
 } */
