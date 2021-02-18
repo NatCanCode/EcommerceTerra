@@ -137,7 +137,6 @@ input{
     font-size: clamp(12px, 10vw, 14px);
     padding: 5px 5px;
     border-color: black;
-    /* border-radius: 1px; */
 }
 
 .boutonblack{
@@ -282,7 +281,7 @@ footer{
     border-left: none;
     border-right: none;
     justify-content: center;
-    align-items: space-evenly ;
+    align-items: space-evenly;
     text-align: left;
     align-self: stretch;
 }
