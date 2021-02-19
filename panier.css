@@ -45,7 +45,6 @@ body{
     font-family: 'Roboto', sans-serif;
     color: black;
     font-style: regular;
-    font-size: clamp(12px, 10vw, 18px);
     margin: 0;
     padding: 0;
     border: 0;
@@ -154,7 +153,7 @@ input{
 }
 
 p4{
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     vertical-align: text-bottom;
 }
 
@@ -195,17 +194,17 @@ img{
 }
 
 h4{
-    font-size: 23px;
+    font-size: clamp(12px, 8vw, 23px);
     font-weight: 500;
 }
 
 p2{
-    font-size: 20px;
+    font-size: clamp(12px, 8vw, 20px);
     font-weight: bolder;
 }
 
 input[type=number] {
-    font-size: 21px;
+    font-size: clamp(12px, 8vw, 21px);
     color: black;
     font-weight: 400;
     /* border: none;; */
@@ -246,16 +245,16 @@ input[type=number] {
 p1{
     text-decoration: underline;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(12px, 8vw, 20px);
 }
 
 h1{
-    font-size: 23px;
+    font-size: clamp(12px, 8vw, 23px);
     font-weight: 500;
 }
 
 h3{
-    font-size: 15px;
+    font-size: clamp(14px, 2vw, 15px);
     font-weight: 400;
     /* font-style: italic; */
 }
@@ -371,7 +370,15 @@ footer{
 
    .footer{
         flex-direction: column !important;
-    
+
     }
+
+    .container,
+    .details{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
 
 }

@@ -45,7 +45,6 @@ body{
     font-family: 'Roboto', sans-serif;
     color: black;
     font-style: regular;
-    font-size: clamp(12px, 10vw, 18px);
     margin: 0;
     padding: 0;
     border: 0;
@@ -167,7 +166,7 @@ input{
 
 p{
   font-weight: 500;
-  font-size: clamp(12px, 10vw, 20px);
+  font-size: clamp(12px, 8vw, 20px);
   margin-top: 20px;
   margin-left: 40px;
 }
@@ -204,7 +203,7 @@ button{
     border: 0px;
     width: 100px;
     height : 40px;
-    font-size: 18px;
+    font-size: clamp(12px,8vw,18px);
     align-self: center;
     margin-bottom: 10px;
 }
@@ -247,14 +246,14 @@ h2,
 }
 
 .detail3 .box{
-    font-size: 20px;
+    font-size: clamp(14px, 9vw,20px);
     justify-content: center ;
     background: #FFFBF5;
     color: black;
 }
 
 .detail3 .sizeselect{
-    font-size: 20px;
+    font-size: clamp(14px, 9vw,20px);
     justify-content: center;
 }
 
@@ -265,7 +264,12 @@ h2,
 }
 
 p2{
+    font-size: clamp(16px, 3vw, 18px);
     font-weight: 600;
+}
+
+p3{
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 
@@ -281,9 +285,9 @@ p2{
     animation: glisse 10s;
 }
 
-.slide{
+/* .slide{
     float: left;
-}
+} */
 
 @keyframes glisse{
     0%{
@@ -345,12 +349,39 @@ footer{
     flex-direction: row;
 }
 
+/* ============================================ MEDIA QUERIES =============================== */
 
 @media (max-width: 900px){
     #home nav a{
         display: none;
     }
 
+@media (max-width: 400px){
+    p,
+    .slider{
+    display: none;
+    }
+
+    img{
+        display: block;
+    }
+
+   button.box,
+   p3{
+        /* max-width: 100%;
+        flex-direction: column; */
+        display: none;
+    }
+
+   
+
+    .slide{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+}
 
 
 @media (max-width: 670px) {
@@ -420,5 +451,7 @@ footer{
     .footer{
         flex-direction: column !important;
     }
+
+    
 }
 }

@@ -44,7 +44,6 @@ body{
     font-family: 'Roboto', sans-serif;
     color: black;
     font-style: regular;
-    font-size: clamp(12px, 10vw, 18px);
     margin: 0;
     padding: 0;
     border: 0;
@@ -161,13 +160,13 @@ input{
 /* ============================= PAGE PAIEMENT =========================== */
 
 h3{
-    font-size: 18px;
+    font-size: clamp(12px, 4vw, 18px);
     font-weight: 400;
     margin: 40px 0px 10px 40px;
 }
 
 h4{
-    font-size: 16px;
+    font-size: clamp(10px, 4vw, 16px);
     font-weight: 400; 
 }
 
@@ -187,7 +186,7 @@ hr{
 
 p1{
     text-decoration : underline;
-    font-size: 16px;
+    font-size: clamp(10px, 8vw, 16px);
     font-weight: bold;
 }
 
@@ -196,7 +195,7 @@ button{
     background: #333333;
     color: #FFFFFF;
     border: 0px;
-    font-size: 14px;
+    font-size: clamp(10px, 6vw, 14px);
     font-weight: 600;
     align-self: center;
     padding: 10px;
@@ -209,12 +208,12 @@ button{
 }
 
 p2{
-    font-size: 18px;
+    font-size: clamp(12px, 10vw, 18px);
     font-weight: 600;
 }
 
 h1{
-    font-size: 20px;
+    font-size: clamp(12px, 6vw, 20px);
 }
 
 
@@ -279,7 +278,7 @@ footer{
     min-height: 94px;
     flex-direction: row;
 }
-
+/*=====================================  MEDIA QUERIES ===================================== */
 @media (max-width: 900px){
     nav a{
         display: none;
@@ -353,5 +352,42 @@ footer{
         flex-direction: column !important;
     
     }
+     
+    
+    .CONTAINER{
+        flex-direction: column-reverse;
+    }
 
+    .vertical,
+    p1{
+        display : none;
+    }
+
+    h3{
+        text-align: center;
+        margin: 40px;
+    }
+
+    body{
+        margin: 40px;
+    }
+
+    .box1{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .expval{
+        justify-content: center;
+    }
+
+    .hr1{
+        width: 100%;
+    }
+
+    .modepaiement{
+        max-width: 100%;
+    }
+   
+    
 }
