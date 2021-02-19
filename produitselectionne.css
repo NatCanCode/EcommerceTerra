@@ -166,21 +166,21 @@ input{
 
 p{
   font-weight: 500;
-  font-size: clamp(12px, 8vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   margin-top: 20px;
   margin-left: 40px;
 }
 
 
 h3{
-    font-size: clamp(16px, 10vw, 22px);
+    font-size: clamp(16px, 3vw, 22px);
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 h4{
     font-weight: 500;
-    font-size: clamp(16px, 10vw, 22px);
+    font-size: clamp(16px, 3vw, 22px);
     margin-bottom: 15px;
 }
 
@@ -203,7 +203,7 @@ button{
     border: 0px;
     width: 100px;
     height : 40px;
-    font-size: clamp(12px,8vw,18px);
+    font-size: clamp(14px,3vw,16px);
     align-self: center;
     margin-bottom: 10px;
 }
@@ -264,7 +264,7 @@ h2,
 }
 
 p2{
-    font-size: clamp(16px, 3vw, 18px);
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: 600;
 }
 
@@ -356,34 +356,6 @@ footer{
         display: none;
     }
 
-@media (max-width: 400px){
-    p,
-    .slider{
-    display: none;
-    }
-
-    img{
-        display: block;
-    }
-
-   button.box,
-   p3{
-        /* max-width: 100%;
-        flex-direction: column; */
-        display: none;
-    }
-
-   
-
-    .slide{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    
-}
-
-
 @media (max-width: 670px) {
     #select nav a{
         display: table-column;
@@ -451,6 +423,82 @@ footer{
     .footer{
         flex-direction: column !important;
     }
+
+    p,
+    p1,
+    p2,
+    p3,
+    h1,
+    h2,
+    h3,
+    h4{
+        text-align: center;
+        margin: 0;
+    }
+
+    .detail1{
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .detail2{
+        justify-content: center;
+        align-items: center;
+    }
+    .detail3{
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sizeselect{
+        width: 100%;
+        height: 100%;
+    } 
+    .italic{
+        font-size: clamp(12px,3vw,16px);
+    }
+
+    button.ajouter{
+        justify-content: center;
+        align-items : center ;
+        align-self: center;
+        width: 100%;
+    }
+    
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    img{
+       margin: 0px;
+    }
+
+     .detail4{
+         justify-content: center;
+         align-items: center;
+    }
+
+    .slider{
+        width: max(370px,70%);
+        overflow: hidden;
+    }
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    
+
+    
+
 
     
 }

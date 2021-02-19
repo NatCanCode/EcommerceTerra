@@ -194,17 +194,17 @@ img{
 }
 
 h4{
-    font-size: clamp(12px, 8vw, 23px);
+    font-size: clamp(12px, 4vw, 23px);
     font-weight: 500;
 }
 
 p2{
-    font-size: clamp(12px, 8vw, 20px);
+    font-size: clamp(12px, 4vw, 20px);
     font-weight: bolder;
 }
 
 input[type=number] {
-    font-size: clamp(12px, 8vw, 21px);
+    font-size: clamp(10px, 4vw, 21px);
     color: black;
     font-weight: 400;
     /* border: none;; */
@@ -245,16 +245,16 @@ input[type=number] {
 p1{
     text-decoration: underline;
     font-weight: 500;
-    font-size: clamp(12px, 8vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 h1{
-    font-size: clamp(12px, 8vw, 23px);
+    font-size: clamp(15px, 4vw, 23px);
     font-weight: 500;
 }
 
 h3{
-    font-size: clamp(14px, 2vw, 15px);
+    font-size: clamp(6px, 4vw, 15px);
     font-weight: 400;
     /* font-style: italic; */
 }
@@ -377,6 +377,53 @@ footer{
     .details{
         flex-direction: column;
         justify-content: center;
+        padding: 0;
+    }
+
+    .details{
+        margin: 10px;
+        gap: 10px;
+    
+    }
+
+    p1{
+        /* display: none; */
+    }
+
+    .container3,
+    .container2{
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .container3{
+        flex-direction: column-reverse;
+    }
+
+    img{
+        /* garder ratio d'une image  */
+        object-fit: cover;
+        /* reponsive */
+        flex-wrap: wrap-reverse;
+        max-width: 100%;
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+
+    p.panier{
+        text-align: center;
+        /* margin-bottom: 10px; */
+        margin-left: 0px;
+    }
+
+    .container{
+        /* border: 2px solid lightblue; */
+        gap: 20px;
+    }
+
+    button{
+        margin-bottom: 10px;
     }
 
 
